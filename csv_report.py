@@ -8,7 +8,6 @@ def write_csv_report(page_data, filename="report.csv"):
 
         writer.writeheader()
         for item in page_data.values():
-            print(item)
             writer.writerow({
                 "page_url": item["url"], 
                 "h1": item["h1"], 
